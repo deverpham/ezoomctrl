@@ -1,0 +1,29 @@
+header {
+  background: #0099FF;
+  padding: 10px 0;
+  color: #FFFFFF;
+}
+
+footer {
+  background: #5C5C5B;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+textarea {
+  border: none;
+  min-height: 300px;
+  line-height: 1;
+  color: #FFFFFF;
+  background: #0099FF;
+  padding: 10px;
+}
+
+.tool-area {
+  padding: 0 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

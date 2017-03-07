@@ -1,0 +1,84 @@
+@import 'reset.scss';
+a {
+    text-decoration :none;
+}
+.flex {
+    display :flex;
+    flex-wrap: wrap;
+}
+.inline {
+    @extend .flex;
+    flex-direction : row;
+    &.around {
+        justify-content : space-around;
+    }
+    &.between {
+         justify-content: space-between;
+    }
+    &.at-end{
+        justify-content: flex-end;
+    }
+    &.at-start{
+        justify-content: flex-start;
+    }
+}
+.list {
+    @extend .flex;
+    flex-direction :column;
+}
+
+@for $i from 1 through 100  {
+    .w#{$i} {
+        width: $i*1%;
+    }
+}
+@for $i from 1 through 100  {
+    .p-w#{$i} {
+        margin-left: $i*1%;
+    }
+}
+    .img-auto {
+    max-width:100%;
+    height:auto;
+}
+@for $i from 1 through 5 {
+    @for $j from 1 through 9 {
+        .font-s#{$i}#{$j} {
+            font-size :$i#{'.'}$j#{'rem'};
+        }
+    }
+}
+.middle {
+    align-items :center;
+}
+.f-middle {
+    @extend .middle;
+    justify-content: center;
+}
+.shadow {
+    box-shadow: 0px 2px 15px 0px rgba(69,68,69,0.69);
+}
+.overgrid {
+    & div {
+        float:left;
+    }
+}
+.text-end {
+    text-align:right;
+}
+.text-start {
+    text-align:left;
+}
+.text-center {
+    text-align:center;
+}
+.left-push {
+    float:left;
+
+}
+.right-push {
+    float:right;
+}
+.free-grid {
+    position:absolute;
+}

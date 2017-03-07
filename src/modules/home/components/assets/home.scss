@@ -1,0 +1,30 @@
+//variable
+$primaryColor:#0099FF;
+$middleColor :#FFFFFF;
+$black:#5C5C5B;
+//variable
+header {
+  background: $primaryColor;
+  padding:10px 0;
+  color:$middleColor;
+}
+footer {
+  background:$black;
+  padding:10px;
+  color:$middleColor;
+}
+textarea {
+  border:none;
+  min-height: 300px;
+  line-height: 1;
+  color:$middleColor;
+  background: $primaryColor;
+  padding:10px;
+}
+.tool-area {
+  padding:0 10px;
+}
+.container {
+  width:80%;
+  margin:0 auto;
+}

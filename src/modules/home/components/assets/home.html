@@ -1,0 +1,59 @@
+<header>
+  <div class="title">
+      <h3 class='text-center'>Công cụ hổ trợ kỹ thuật ezoomvn</h3>
+  </div>
+  <div class="description">
+    <p class='text-center'>Những công cụ cần thiết. mọi chi tiết liên hệ : kythuat@ezoom.vn</p>
+  </div>
+</header>
+<section class='container'>
+  <ul class="collapsible" data-collapsible="accordion">
+   <li>
+     <div class="collapsible-header"><i class="material-icons">filter_drama</i>Tạo Link No Follow</div>
+     <div class="collapsible-body">
+       <div class="ezoomLink inline">
+         <div class="tool-area w50 list f-middle">
+           <form class="w100 inline between" action="index.html" method="post">
+             <div class="input-field w49">
+              <input type="text" name="link.link" value="" [(ngModel)]='link.link'>
+              <label for="textarea1">Điền Link</label>
+            </div>
+             <div class="input-field w40">
+              <input type="text" name="link.text" value="" [(ngModel)]='link.text'>
+              <label for="textarea1">Điền Text</label>
+            </div>
+
+           </form>
+           <button class='btn' (click)='addLink()'>Thêm Link</button>
+         </div>
+         <div class="result-area w49">
+           <textarea  [(ngModel)]='ExportLink' id='result' spellcheck='false' contenteditable='false'></textarea>
+           <button (click)='copyLinkResult()' class='btn green' *ngIf="linkResult!=''">Copy</button>
+           <button (click)='removeLink()' class='btn red' *ngIf="linkResult!=''">Xóa</button>
+            <span class="new badge blue" data-badge-caption='Link '>{{links.length}}</span>
+         </div>
+
+       </div>
+     </div>
+   </li>
+   <li>
+     <div class="collapsible-header"><i class="material-icons">place</i>Lưu Trữ Hosting</div>
+     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+   </li>
+   <li>
+     <div class="collapsible-header"><i class="material-icons">whatshot</i>Kế Hoạch Trong Tuần</div>
+     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+   </li>
+   <li>
+     <div class="collapsible-header"><i class="material-icons">whatshot</i>Chấm Công</div>
+     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+   </li>
+ </ul>
+</section>
+<footer>
+  <div class="inline between">
+      <p>Deverloped by <span>Deverpham</span></p>
+
+      <p>Copyright @2017 Ezoom.vn</p>
+  </div>
+</footer>
